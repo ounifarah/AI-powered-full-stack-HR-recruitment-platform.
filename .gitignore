@@ -1,0 +1,36 @@
+# Godot
+.import/
+.export/
+export_presets.cfg
+*.godot
+*.import
+
+# Mono / C#
+.mono/
+*.csproj
+*.sln
+*.user
+*.dll
+*.pdb
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Build / binary outputs
+bin/
+build/
+dist/
+
+# Project-specific (keep secrets & local data out)
+.env
+HRmanager password.txt
+uploads/
+chroma/
+chroma.sqlite3
+
+# Node (if frontend present)
+**/node_modules/
+frontend/build/
