@@ -39,6 +39,74 @@ This repository contains a full-stack HR management application with features to
 - Tailwind CSS
 - Chroma (optional) for vector embeddings
 
+## Setup
+
+### 1. Install dependencies
+
+Backend:
+
+```bash
+cd backend
+npm install
+```
+
+Frontend:
+
+```bash
+cd frontend
+npm install
+```
+
+### 2. Configure environment variables
+
+Create a `backend/.env` file and add:
+
+```env
+PORT=5000
+MONGO_URI=your_mongo_connection_string
+JWT_SECRET=your_jwt_secret
+OLLAMA_URL=http://127.0.0.1:11434
+OLLAMA_EMBED_MODEL=nomic-embed-text
+OLLAMA_CHAT_MODEL=qwen2.5:7b-instruct
+OLLAMA_SCORING_MODEL=qwen2.5:14b-instruct
+CHROMA_URL=http://127.0.0.1:8000
+```
+
+### 3. Start Chroma
+
+Run Chroma locally before using the AI features:
+
+```bash
+chroma run --host 127.0.0.1 --port 8000
+```
+
+### 4. Start Ollama
+
+Make sure Ollama is installed and running, then pull the models used by the app:
+
+```bash
+ollama serve
+ollama pull nomic-embed-text
+ollama pull qwen2.5:7b-instruct
+ollama pull qwen2.5:14b-instruct
+```
+
+### 5. Run the app
+
+Backend:
+
+```bash
+cd backend
+node server.js
+```
+
+Frontend:
+
+```bash
+cd frontend
+npm start
+```
+
 ## AI Features
 
 This project includes an optional AI stack used for CV scoring and an interview chatbot. It implements a Retrieval-Augmented Generation (RAG) pattern: CVs are converted to text, chunked, embedded, stored in a Chroma vector collection, and retrieved to provide context for a local LLM which returns structured evaluations.
@@ -152,17 +220,15 @@ curl -X POST http://localhost:5000/api/auth/login \
 
 ## Screenshots & Demo
 
-Add screenshots or a short demo video in `frontend/public/images/` and link them here. Consider adding a `docs/` folder for screenshots and deployment notes.
+Add screenshots, platform images, and a short demo video in `frontend/public/images/` and link them here. You can also add a `docs/` folder for extra screenshots, captions, or deployment notes.
+
+Suggested files:
+
+<img width="1868" height="964" alt="hero1" src="https://github.com/user-attachments/assets/4fffb268-5848-4a9d-9a94-b44a5c1abac8" />
+<img width="1860" height="946" alt="evaluation_result" src="https://github.com/user-attachments/assets/d1278468-1922-424b-a62a-41d62d22262a" />
+<img width="1864" height="937" alt="statistiques_globales png" src="https://github.com/user-attachments/assets/68b7e005-aa2c-41c0-973a-d8f91896243c" />
+https://github.com/user-attachments/assets/bca3b5e9-0d75-48ca-a449-fac77158c268
+
+
 
 ## License
-
-Add a `LICENSE` file to this repo (MIT suggested for permissive reuse).
-
----
-
-If you want, I can also:
-
-- Remove `HRmanager password.txt` from the repo and add `.env.example` with required variables.
-- Create a short `frontend` demo GIF and add it to `frontend/public/images/`.
-
-Tell me which follow-up action you want next.
