@@ -227,8 +227,32 @@ Suggested files:
 <img width="1868" height="964" alt="hero1" src="https://github.com/user-attachments/assets/4fffb268-5848-4a9d-9a94-b44a5c1abac8" />
 <img width="1860" height="946" alt="evaluation_result" src="https://github.com/user-attachments/assets/d1278468-1922-424b-a62a-41d62d22262a" />
 <img width="1864" height="937" alt="statistiques_globales png" src="https://github.com/user-attachments/assets/68b7e005-aa2c-41c0-973a-d8f91896243c" />
-https://github.com/user-attachments/assets/bca3b5e9-0d75-48ca-a449-fac77158c268
+
+https://github.com/user-attachments/assets/76a28dfc-1a8d-464b-ba9b-a5c0a545694c
+
 
 
 
 ## License
+
+MIT License
+
+Copyright (c) 2026 Farah Ouni
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
