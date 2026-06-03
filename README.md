@@ -18,7 +18,6 @@ This repository contains a full-stack HR management application with features to
 - Frontend entry: [frontend/src/App.js](frontend/src/App.js#L1)
 - Frontend config: [frontend/src/config/api.js](frontend/src/config/api.js#L1)
 - Local Chroma DB: `chroma/`
-- Credentials file to remove before publishing: [HRmanager password.txt](HRmanager%20password.txt#L1)
 - Existing frontend README: [frontend/README.md](frontend/README.md#L1)
 
 ## Features
